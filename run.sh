@@ -45,7 +45,7 @@ read -p "Enter Choice: " Choice
 echo You  entered $Choice
 
 
-if [ $Choice = 1]; then
+if [$Choice=1]; then
  
     #Parental_control_GNOME_Nanny
     sudo add-apt-repository ppa:nanny 
@@ -55,7 +55,7 @@ if [ $Choice = 1]; then
     #Viber
      sudo flatpak install -y flathub com.viber.Viber
 
-elif [ $Choice = 2]; then
+elif [$Choice=2]; then
 
     #Discord
     flatpak install -y flathub com.discordapp.Discord
@@ -73,7 +73,7 @@ elif [ $Choice = 2]; then
     wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
     sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
 
-elif [ $Choice = 3]; then
+elif [$Choice=3]; then
 
     #Gimp
     sudo add-apt-repository ppa:ubuntuhandbook1/gimp
@@ -89,7 +89,7 @@ elif [ $Choice = 3]; then
     #kdenlive
     flatpak install flathub org.kde.kdenlive
 
-elif [ $Choice = 4]; then
+elif [$Choice=4]; then
 
     #Slack
     sudo apt install -y slack
@@ -100,8 +100,7 @@ elif [ $Choice = 4]; then
     #Simplenote
     sudo flatpak install -y flathub com.simplenote.Simplenote
 
-elif [ $Choice = 4]; then
-
+elif [$Choice=5]; then
     #vsCode
     sudo apt install software-properties-common apt-transport-https wget
     wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
