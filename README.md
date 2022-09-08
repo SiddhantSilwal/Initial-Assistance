@@ -5,5 +5,6 @@ Initial Assistanse is a package bundle installation tool which makes newcomers i
 
 # Recommendations
 We recommend users to do minimal install of their desired linux distro to prevent bloatwares although the script runs without any problem for the full version.   
+  
 **CAUTION:** Some minimal install do not include GUI in that case after the OS installation a desktop environment or window manager is strictly required for GUI as we currently have no option for installing these.
 
