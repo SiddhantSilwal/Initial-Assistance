@@ -1,6 +1,7 @@
 #! /bin/bash
 echo "Updating System"
-Sudo apt -y update && sudo -y apt upgrade
+sudo apt -y update && sudo -y apt upgrade
+sudo apt install curl
 #Automatic nstallation for recommended apps
 
     #XDM_Download_Manager
