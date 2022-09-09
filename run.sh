@@ -1,6 +1,7 @@
 #! /bin/bash
 echo "Updating System"
-Sudo apt -y update && sudo -y apt upgrade
+sudo apt -y update && sudo -y apt upgrade
+sudo apt install curl
 #Automatic nstallation for recommended apps
 
     #XDM_Download_Manager
@@ -26,7 +27,7 @@ Choice  | Target			| Summary				 |
 1	| Home pack 			| Parental control, games,               |
 					| media players etc.			 |
 ----------------------------------------------------------------------------------
-2	| Student's pack		| Educational softwares,                 |
+2	| Education pack		| Educational softwares,                 |
 					| confrence call applications,           |
 					| discord, and more                      |
 ----------------------------------------------------------------------------------	
@@ -72,6 +73,9 @@ elif [$Choice=2]; then
     sudo apt install software-properties-common apt-transport-https wget
     wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
     sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+
+    #Openboard_(for teachers)
+    sudo flatpak install -y flathub ch.openboard.OpenBoard
 
 elif [$Choice=3]; then
 
